@@ -22,7 +22,7 @@ Created by Metadev.
 
 2. Enter into each folder for exercices
 
-3. Configure your own AWS credentials exporting enviromental variables for `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`.
+3. Configure your own AWS credentials exporting enviromental variables for `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` or, alternatively set `AWS_PROFILE`.
 
 4. Init with `terraform init`
 
