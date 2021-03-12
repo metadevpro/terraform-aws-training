@@ -25,22 +25,6 @@ resource "aws_instance" "machine01" {
     private_key = file(var.key_path)
   }
 
-  provisioner "remote-exec" {
-    inline = [
-      "sudo yum update -y",
-      "sudo yum install -y docker httpd-tools",
-      "sudo usermod -a -G docker ec2-user",
-      "sudo curl -L https://github.com/docker/compose/releases/download/1.22.0-rc2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose",
-      "sudo chmod +x /usr/local/bin/docker-compose",
-      "sudo chkconfig docker on",
-      "sudo service docker start",
-      "sudo docker run --name portainer -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock portainer/portainer",
-      "sudo /usr/local/bin/docker-compose up -d",
-      "mkdir /home/ec2-user/buildagent",
-      "free"
-    ]
-  }
-
   provisioner "file" {
     source      = "docker-compose.yml"
     destination = "/home/ec2-user/docker-compose.yml"
@@ -52,9 +36,17 @@ resource "aws_instance" "machine01" {
 
   provisioner "remote-exec" {
     inline = [
-      "docker-compose up -d",
+      "sudo yum update -y",
+      "sudo yum install -y docker httpd-tools",
+      "sudo usermod -a -G docker ec2-user",
+      "sudo curl -L https://github.com/docker/compose/releases/download/1.22.0-rc2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose",
+      "sudo chmod +x /usr/local/bin/docker-compose",
+      "sudo chkconfig docker on",
+      "sudo service docker start",
+      "sudo docker run --name portainer -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock portainer/portainer-ce",
+      "sudo /usr/local/bin/docker-compose up -d",
+      "mkdir /home/ec2-user/buildagent",
       "free"
     ]
   }
-
 }
