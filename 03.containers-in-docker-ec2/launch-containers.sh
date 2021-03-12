@@ -3,7 +3,7 @@
 ## Launch containers
  
 # portainer
-docker run -d --name portainer -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock portainer/portainer
+docker run -d --name portainer -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock portainer/portainer-ce
 
 # rabbitmq
 docker run -d --hostname rabbit --name rabbit rabbitmq:alpine
@@ -13,9 +13,7 @@ docker run -d --name redis redis:alpine
 
 
 # consul
-docker run -d -p 8400:8400 -p 8500:8500 -p 8600:53/udp -h consul \
-       --name=consul progrium/consul -server -bootstrap \
-       -dc=sevilla -node=aljarafe
+docker run -d --name=dev-consul -p 8400:8400 -p 8500:8500 -p 8600:53/udp -e CONSUL_BIND_INTERFACE=eth0 consul
 
 # mongodb
 docker run --name mongodb -d -p 27017:27017 mongo:latest --storageEngine wiredTiger

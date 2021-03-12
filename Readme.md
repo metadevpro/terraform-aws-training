@@ -3,6 +3,7 @@
 Infrastructure as Code with Terraform and AWS.
 Created by Metadev.
 
+Last revision 2021.03.12
 ## Prerequisites
 
 1. [Git](https://git-scm.com/downloads)
@@ -40,9 +41,16 @@ When using *.pem files for SSH (especially on Mac OS and Linux) ensure key file 
 chmod 600 <file>.pem
 ```
 
+## Examples
+
+1. Create a AWS EC2 virtual machine.
+2. Deploy a complete static website in S3.
+3. Create a AWS EC2 virtual machine + docker containers.
+4. Create a complete CI Server: Teamcity with EC2 and docker.
+
 ## Disclaimer
 
-Using samples in AWS accounts will incurr in small charges. Remeber always to destroy your resources after finalizing the training if not in use.
+Using samples in AWS accounts will incurr in small charges. Remember always to destroy your resources after finalizing the training if not in use.
 
 ## License
 
