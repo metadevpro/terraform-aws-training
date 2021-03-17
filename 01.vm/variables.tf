@@ -13,6 +13,7 @@
 variable "author" {
   description = "Name of the operator. Used as a prefix to avoid name collision on resources."
   type        = string
+  default     = "acme"
 }
 
 variable "region" {
@@ -24,7 +25,7 @@ variable "region" {
 variable "key_path" {
   description = "Key path for SSHing into EC2"
   type        = string
-  default     = "./keys/paris.pem"
+  default     = "./keys/paris-keys.pem"
 }
 
 variable "key_name" {

@@ -1,6 +1,6 @@
 resource "aws_instance" "machine01" {
   ami                         = "ami-007fae589fdf6e955" // "ami-2757f631"
-  instance_type               = "t2.micro"
+  instance_type               = "t2.small" # need at least small to have enought RAM
   associate_public_ip_address = true
   key_name                    = var.key_name
   vpc_security_group_ids      = [aws_security_group.sg_acme.id]

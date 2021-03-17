@@ -13,6 +13,7 @@
 variable "author" {
   description = "Name of the operator. Used as a prefix to avoid name collision on resources."
   type        = string
+  default     = "pjmolina"
 }
 
 variable "region" {

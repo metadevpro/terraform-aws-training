@@ -12,7 +12,7 @@ resource "aws_instance" "machine01" {
   tags = {
     Name        = "${var.author}.machine01"
     Author      = var.author
-    Date        = "2020.02.21"
+    Date        = "2021.03.17"
     Environment = "LAB"
     Location    = "Paris"
     Project     = "Acme"
