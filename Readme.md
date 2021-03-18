@@ -25,13 +25,15 @@ Last revision 2021.03.12
 
 3. Configure your own AWS credentials exporting enviromental variables for `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` or, alternatively set `AWS_PROFILE`.
 
-4. Init with `terraform init`
+4. Create the `keys/` folder and place your PEM and PPK files for execices 1, 2, and 4.
 
-5. Validate with `terraform validate`
+5. Init with `terraform init`
 
-6. Deploy with `terraform apply`
+6. Validate with `terraform validate`
 
-7. Destroy with `terraform destroy`
+7. Deploy with `terraform apply`
+
+8. Destroy with `terraform destroy`
 
 ## SSH Keys
 
@@ -61,9 +63,9 @@ chmod 600 <file>.pem
 
 ## Examples
 
-1. Create a AWS EC2 virtual machine.
+1. Create an AWS EC2 virtual machine.
 2. Deploy a complete static website in S3.
-3. Create a AWS EC2 virtual machine + docker containers.
+3. Create an AWS EC2 virtual machine + docker containers.
 4. Create a complete CI Server: Teamcity with EC2 and docker.
 
 ## Disclaimer
