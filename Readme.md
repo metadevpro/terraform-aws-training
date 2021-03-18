@@ -49,6 +49,8 @@ To convert the PEM file into a PPK use `puttygen.exe` to convert the key:
 1. Load the PEM file
 2. Save the private key as PPK file.
 
+Puttygen.exe can be downloaded [here](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html).
+
 ## Key Permissions
 
 When using *.pem files for SSH (especially on Mac OS and Linux) ensure key file has read persmissions for the user only with the command:
