@@ -5,8 +5,8 @@ resource "aws_s3_bucket" "b" {
   provisioner "local-exec" {
     command = "aws s3 sync ./www/ s3://${aws_s3_bucket.b.id} --delete --acl public-read"
   }
-
 }
+
 resource "aws_s3_bucket_acl" "b" {
   bucket = aws_s3_bucket.b.id
   acl    = "public-read"
