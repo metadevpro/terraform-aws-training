@@ -1,6 +1,6 @@
 resource "aws_instance" "machine01" {
-  ami                         = "ami-007fae589fdf6e955" // "ami-2757f631"
-  instance_type               = "t2.medium" # medium = 4Gb, small = 2Gb, micro = 1Gb, nano= 0.5Gb   
+  ami                         = "ami-089ea1de61e0c9c18"
+  instance_type               = "t3.medium" # medium = 4Gb, small = 2Gb, micro = 1Gb, nano= 0.5Gb   
   associate_public_ip_address = true
   key_name                    = var.key_name
   vpc_security_group_ids      = [aws_security_group.sg_acme.id]
@@ -12,9 +12,9 @@ resource "aws_instance" "machine01" {
   tags = {
     Name        = "${var.author}.teamcity"
     Author      = var.author
-    Date        = "2020.02.21"
+    Date        = "2023.02.16"
     Environment = "LAB"
-    Location    = "Paris"
+    Location    = "Zaragoza"
     Project     = "acme"
   }
 
@@ -36,7 +36,7 @@ resource "aws_instance" "machine01" {
       "sudo service docker start",
       "sudo docker run --name portainer -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock portainer/portainer-ce",
       "mkdir /home/ec2-user/buildagent",
-   ]
+    ]
   }
 
   provisioner "file" {
