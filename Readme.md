@@ -3,7 +3,7 @@
 Infrastructure as Code with Terraform and AWS.
 Created by Metadev.
 
-Last revision 2021.03.12
+Last revision 2023.02.16
 ## Prerequisites
 
 1. [Git](https://git-scm.com/downloads)
@@ -38,8 +38,8 @@ Last revision 2021.03.12
 ## SSH Keys
 
 AWS requires to setup a pair of SSH keys to access the machines.
-To do it go to [https://eu-west-3.console.aws.amazon.com/ec2/v2/home?region=eu-west-3#KeyPairs:](https://eu-west-3.console.aws.amazon.com/ec2/v2/home?region=eu-west-3#KeyPairs:) and create a key pair.
-The keys must be created for an specific AWS region. In this example using Paris = `eu-west-3`.
+To do it go to [https://eu-south-2.console.aws.amazon.com/ec2/v2/home?region=eu-south-2#KeyPairs:](https://eu-south-2.console.aws.amazon.com/ec2/v2/home?region=eu-south-2#KeyPairs:) and create a key pair.
+The keys must be created for an specific AWS region. In this example using Zaragoza = `eu-south-2`.
 
 - The public key will be retained by AWS.
 - The private key is the one you are downloading. (Use the PEM format.)
@@ -75,4 +75,4 @@ Using samples in AWS accounts will incurr in small charges. Remember always to d
 ## License
 
 Licensed under CC BY [![CC BY](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)
-(c) [Metadev](https://metadev.pro) 2021.
+(c) [Metadev](https://metadev.pro) 2021-2023.

@@ -1,5 +1,5 @@
 resource "aws_instance" "machine01" {
-  ami                         = "ami-089ea1de61e0c9c18" //, "ami-007fae589fdf6e955" // "ami-2757f631"
+  ami                         = "ami-089ea1de61e0c9c18"
   instance_type               = "t3.micro"
   associate_public_ip_address = true
   key_name                    = var.key_name
@@ -12,9 +12,9 @@ resource "aws_instance" "machine01" {
   tags = {
     Name        = "${var.author}.machine01"
     Author      = var.author
-    Date        = "2021.03.17"
+    Date        = "2023.02.16"
     Environment = "LAB"
-    Location    = "Paris"
+    Location    = "Zaragoza"
     Project     = "Acme"
   }
 }
