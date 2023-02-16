@@ -14,7 +14,7 @@ resource "aws_s3_bucket_acl" "b" {
 
 resource "aws_s3_bucket_website_configuration" "b" {
   bucket = aws_s3_bucket.b.id
-  
+
   index_document {
     suffix = "index.html"
   }

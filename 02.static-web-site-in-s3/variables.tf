@@ -13,11 +13,11 @@
 variable "region" {
   description = "AWS region"
   type        = string
-  default     = "eu-west-3" # Paris
+  default     = "eu-south-2" # Zaragoza
 }
 
 variable "bucket_name" {
   description = "S3 bucket name to use"
   type        = string
-  default     = "acme-demo-bucket"
+  default     = "acme-demo-bucket2"
 }
