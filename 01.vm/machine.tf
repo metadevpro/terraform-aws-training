@@ -1,6 +1,6 @@
 resource "aws_instance" "machine01" {
-  ami                         = "ami-007fae589fdf6e955" // "ami-2757f631"
-  instance_type               = "t2.micro"
+  ami                         = "ami-089ea1de61e0c9c18" //, "ami-007fae589fdf6e955" // "ami-2757f631"
+  instance_type               = "t3.micro"
   associate_public_ip_address = true
   key_name                    = var.key_name
   vpc_security_group_ids      = [aws_security_group.sg_acme.id]

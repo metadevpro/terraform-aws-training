@@ -19,17 +19,18 @@ variable "author" {
 variable "region" {
   description = "AWS region"
   type        = string
-  default     = "eu-west-3" # Paris
+  # default     = "eu-west-3" # Paris
+  default = "eu-south-2" # Zaragoza
 }
 
 variable "key_path" {
   description = "Key path for SSHing into EC2"
   type        = string
-  default     = "./keys/paris-keys.pem"
+  default     = "./keys/zaragoza1.pem"
 }
 
 variable "key_name" {
   description = "Key name for SSHing into EC2"
   type        = string
-  default     = "paris-keys"
+  default     = "zaragoza1"
 }
