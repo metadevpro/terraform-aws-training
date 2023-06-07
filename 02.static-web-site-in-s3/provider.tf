@@ -8,7 +8,7 @@ terraform {
   }
 }
 provider "aws" {
-  region = "eu-south-2"
+  # region = "eu-south-2"
   # profile    = "your-aws-user-account"
 
   # access_key = "$var.access_key"
