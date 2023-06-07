@@ -4,11 +4,6 @@ resource "aws_s3_bucket" "b" {
   force_destroy = true
 }
 
-# resource "aws_s3_bucket_acl" "acl1" {
-#   bucket = aws_s3_bucket.b.id
-#   acl    = "public-read"
-# }
-
 resource "aws_s3_bucket_ownership_controls" "own1" {
   bucket = aws_s3_bucket.b.id
   rule {
