@@ -14,7 +14,7 @@ resource "aws_instance" "machine01" {
     Author      = var.author
     Date        = "2023.02.16"
     Environment = "LAB"
-    Location    = "Zaragoza"
+    Location    = "Zárágózá"
     Project     = "Acme"
   }
 }

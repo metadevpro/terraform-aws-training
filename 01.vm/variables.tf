@@ -19,8 +19,7 @@ variable "author" {
 variable "region" {
   description = "AWS region"
   type        = string
-  # default     = "eu-west-3" # Paris
-  default = "eu-south-2" # Zaragoza
+  default     = "eu-south-2" # Zaragoza
 }
 
 variable "key_path" {
