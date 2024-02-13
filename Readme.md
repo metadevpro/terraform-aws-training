@@ -3,7 +3,8 @@
 Infrastructure as Code with Terraform and AWS.
 Created by Metadev.
 
-Last revision 2023.02.16
+Last revision 2024.02.13
+
 ## Prerequisites
 
 1. [Git](https://git-scm.com/downloads)
@@ -17,9 +18,9 @@ Last revision 2023.02.16
 
 1. Clone the repository to local machine
 
-    ```bash
-    git clone git@github.com:metadevpro/terraform-aws-training.git
-    ```
+   ```bash
+   git clone git@github.com:metadevpro/terraform-aws-training.git
+   ```
 
 2. Enter into each folder for exercices
 
@@ -55,7 +56,7 @@ Puttygen.exe can be downloaded [here](https://www.chiark.greenend.org.uk/~sgtath
 
 ## Key Permissions
 
-When using *.pem files for SSH (especially on Mac OS and Linux) ensure key file has read persmissions for the user only with the command:
+When using \*.pem files for SSH (especially on Mac OS and Linux) ensure key file has read persmissions for the user only with the command:
 
 ```bash
 chmod 600 <file>.pem
@@ -75,4 +76,4 @@ Using samples in AWS accounts will incurr in small charges. Remember always to d
 ## License
 
 Licensed under CC BY [![CC BY](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)
-(c) [Metadev](https://metadev.pro) 2021-2023.
+(c) [Metadev](https://metadev.pro) 2021-2024.
