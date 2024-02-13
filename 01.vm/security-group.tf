@@ -1,5 +1,5 @@
 # Security group
-resource "aws_security_group" "sg_acme" {
+resource "aws_security_group" "sg_acme1" {
   name = "${var.author}_sg_acme"
 
   lifecycle {

@@ -1,5 +1,5 @@
 resource "aws_instance" "machine01" {
-  ami                         = "ami-089ea1de61e0c9c18"
+  ami                         = "ami-0c298ef9df790e524"
   instance_type               = "t3.medium" # medium = 4Gb, small = 2Gb, micro = 1Gb, nano= 0.5Gb   
   associate_public_ip_address = true
   key_name                    = var.key_name
